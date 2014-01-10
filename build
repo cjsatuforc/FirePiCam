@@ -1,0 +1,10 @@
+#! /bin/sh
+echo building FirePiCam...
+if [ ! -e /opt/vc/userland ]
+then
+	echo installing userland header files...
+	git clone git://github.com/raspberrypi/userland.git /opt/vc/userland
+fi
+rm -rf CMakeFiles CMakeFiles.txt
+cmake .
+make 

@@ -16,11 +16,11 @@ configure_file (
 	"${PROJECT_BINARY_DIR}/FirePiCam.h"
 	)
 
-include_directories(/opt/vc/userland/host_applications/linux/libs/bcm_host/include)
-include_directories(/opt/vc/userland/interface/vcos)
+include_directories(/opt/vc/include)
+include_directories(/opt/vc/include/interface/vcos/pthreads)
+include_directories(/opt/vc/include/interface/vmcs_host/linux)
 include_directories(/opt/vc/userland)
-include_directories(/opt/vc/userland/interface/vcos/pthreads)
-include_directories(/opt/vc/userland/interface/vmcs_host/linux)
+#include_directories(/opt/vc/userland/host_applications/linux/libs/bcm_host/include)
 
 add_library(firepicam SHARED RaspiCamControl.c RaspiCLI.c RaspiPreview.c FirePiCam.c)
 target_link_libraries(firepicam /opt/vc/lib/libmmal_core.so /opt/vc/lib/libmmal_util.so /opt/vc/lib/libmmal_vc_client.so /opt/vc/lib/libvcos.so /opt/vc/lib/libbcm_host.so)
