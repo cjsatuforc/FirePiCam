@@ -7,4 +7,4 @@ then
 fi
 rm -rf CMakeFiles CMakeFiles.txt
 cmake .
-make 
+make install
