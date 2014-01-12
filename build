@@ -1,7 +1,9 @@
-#! /bin/sh
+#! /bin/bash
 echo building FirePiCam...
 if [ ! -e /opt/vc/userland ]
 then
+	echo installing cmake...
+	apt-get install cmake
 	echo installing userland header files...
 	git clone git://github.com/raspberrypi/userland.git /opt/vc/userland
 fi
