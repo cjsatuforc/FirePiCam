@@ -1,7 +1,8 @@
 /*  
 Copyright (c) 2013, Broadcom Europe Ltd
 Copyright (c) 2013, James Hughes
-Copyright (c) 2013, Karl Lew, http://www.firepick.org
+
+Portions Copyright (c) 2013,2014 Karl Lew, http://www.firepick.org
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

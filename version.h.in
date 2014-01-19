@@ -1,0 +1,7 @@
+#ifndef VERSION_H
+#define VERSION_H
+
+#define firepicam_VERSION_MAJOR @firepicam_VERSION_MAJOR@
+#define firepicam_VERSION_MINOR @firepicam_VERSION_MINOR@
+
+#endif

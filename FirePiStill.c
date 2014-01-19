@@ -9,7 +9,7 @@ int main(int argc, const char **argv)
 {
   char filename[100];
 
-  fprintf(stderr, "%s version %d.%d\n", basename(argv[0]), FirePiCam_VERSION_MAJOR, FirePiCam_VERSION_MINOR);
+  fprintf(stderr, "%s version %d.%d\n", basename(argv[0]), firepicam_VERSION_MAJOR, firepicam_VERSION_MINOR);
   int status = firepicam_create(argc, argv);
   int frame;
 

@@ -7,6 +7,6 @@ then
 	echo installing userland header files...
 	git clone git://github.com/raspberrypi/userland.git /opt/vc/userland
 fi
-rm -rf CMakeFiles CMakeFiles.txt
-cmake .
+rm -rf CMakeFiles CMakeFiles.txt *.cmake CMakeCache.txt
+cmake -DCMAKE_INSTALL_PREFIX=/usr .
 make install
