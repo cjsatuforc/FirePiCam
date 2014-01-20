@@ -1,8 +1,5 @@
-
 #ifndef FIREPICAM_H
 #define FIREPICAM_H
-#include "version.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif

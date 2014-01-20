@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <memory.h>
 #include "FirePiCam.h"
+#include "version.h"
 
 /**
  * main
