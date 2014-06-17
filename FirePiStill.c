@@ -21,15 +21,20 @@ int main(int argc, const char **argv)
     
     status = firepicam_acquireImage(&buffer);
 
-    int fileIndex = frame % 10;
+    int fileIndex = frame; // % 10;
     if (buffer.length > 0) {
-      sprintf(filename, "camcv%d.jpg", fileIndex);
+      firepicam_print_elapsed();
+      fprintf(stderr, "%x %dB => acquired\n", buffer.pData, buffer.length);
+      sprintf(filename, "camcv%0d.jpg", fileIndex);
       FILE * fJPG = fopen(filename, "w");
       fwrite(buffer.pData, 1, buffer.length, fJPG);
       fflush(fJPG);
       fclose(fJPG);
       firepicam_print_elapsed();
       fprintf(stderr, "%x %dB => %s\n", buffer.pData, buffer.length, filename);
+    } else {
+      firepicam_print_elapsed();
+      fprintf(stderr, "%x %dB IGNORED\n", buffer.pData, buffer.length);
     }
   } // end for (frame)
 

@@ -430,7 +430,6 @@ static void encoder_buffer_callback(MMAL_PORT_T *port, MMAL_BUFFER_HEADER_T *buf
       vcos_log_error("Received a encoder buffer callback with no state");
    }
 
-
    mmal_buffer_header_release(buffer); // release buffer back to the pool
 
    if (port->is_enabled) { // and send one back to the port (if still open)
