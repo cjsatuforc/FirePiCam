@@ -3,7 +3,7 @@ project( firepicam )
 SET(COMPILE_DEFINITIONS -Werror)
 set(firepicam_VERSION_MAJOR 0)
 set(firepicam_VERSION_MINOR 1)
-set(firepicam_VERSION_PATCH 2)
+set(firepicam_VERSION_PATCH 3)
 set(firepicam_VERSION_STRING ${firepicam_VERSION_MAJOR}.${firepicam_VERSION_MINOR}.${firepicam_VERSION_PATCH})
 
 include (InstallRequiredSystemLibraries)
